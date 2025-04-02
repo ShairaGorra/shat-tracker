@@ -3,15 +3,32 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: magenta;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.gitdemo.HelloController">
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: navy blue;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.finale.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <Label text="Pandan G" textFill="WHITE" />
-   <TextField />
-   <PasswordField />
 
-    <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" text="Hello!" />
+    <Label fx:id="welcomeText" text="Login" textFill="WHITE">
+        <font>
+            <Font name="Arial" size="31.0" />
+        </font></Label>
+    <Label text="Please enter your Login and your Password" textFill="WHITE">
+        <font>
+            <Font name="Arial" size="12.0" />
+        </font></Label>
+    <TextField prefHeight="25.0" prefWidth="202.0" promptText="Username or Email" />
+    <PasswordField promptText="Password" />
+    <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Forgot Password?" textFill="WHITE" translateX="60.0" translateY="-18.0" />
+    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="216.0" text="Login" />
+    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" style="-fx-background-color: black;" text="or Sign-in with Google" textFill="#fffafa" />
+    <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Register?" textFill="#008bff">
+        <graphic>
+            <Label text="Not a member yet?" textFill="WHITE">
+                <font>
+                    <Font name="Arial" size="12.0" />
+                </font>
+            </Label>
+        </graphic></Button>
 </VBox>
